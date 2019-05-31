@@ -31,7 +31,7 @@ var tableContent="";
 var jsonDetails =JSON.parse(message);
 
 for(var i=0;i<jsonDetails.asks.length;i++) {
-tableContent+="<tr><td>"+jsonDetails.asks[i][0]+"</td><td>"+jsonDetails.asks[i][1]+"</td></tr>";
+tableContent+="<tr><td>"+jsonDetails.asks[i][0]+"</td><td>"+jsonDetails.asks[i][1].toFixed(4)+"</td></tr>";
 
 //console.log(i+"     "+jsonDetails.asks[i][0]+"    "+jsonDetails.asks[i][1]);
 
@@ -41,7 +41,7 @@ document.getElementById("asks_table").innerHTML ="asks"+tableHeader + tableConte
 
 tableContent="";
 for(var i=0;i<jsonDetails.bids.length;i++) {
-tableContent+="<tr><td>"+jsonDetails.bids[i][0]+"</td><td>"+jsonDetails.bids[i][1]+"</td></tr>";
+tableContent+="<tr><td>"+jsonDetails.bids[i][0]+"</td><td>"+jsonDetails.bids[i][1].toFixed(4)+"</td></tr>";
 
 }
 document.getElementById("bids_table").innerHTML ="bids"+tableHeader + tableContent + tableFooter;

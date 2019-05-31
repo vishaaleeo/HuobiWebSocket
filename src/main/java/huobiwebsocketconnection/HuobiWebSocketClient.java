@@ -35,7 +35,7 @@ public class HuobiWebSocketClient extends WebSocketClient {
 
     public static JSONObject marketDepthData;
 
-     final  String subject="market.ethbtc.depth.";
+     final  String subject="market.btcusdt.depth.";
 
     String step;
 
