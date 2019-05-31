@@ -1,0 +1,68 @@
+<html>
+<head>
+    <title> Market Details </title>
+
+    <script src="jquery-3.4.1.js"></script>
+    <script src="pako.js"></script>
+    <script src="https://requirejs.org/docs/release/2.3.5/minified/require.js"></script>
+
+    <script>
+
+    $(document).ready(function(){
+
+
+
+        document.getElementById("d1").innerHtml="in function";
+
+
+       // const WebSocket = require('ws');
+
+        var ws = new WebSocket("ws://localhost:8081/huobi/websocket");
+
+        console.log("in function");
+
+
+
+        ws.onopen = function () {
+
+        console.log("socket opened");
+
+        document.getElementById("d1").innerHtml="socket opened";
+
+         };
+
+
+
+
+        ws.onmessage = function (evt) {
+
+                  var received_msg = pako.gzip(evt.data,{ to: 'string' });
+                  console.log(received_msg);
+                  document.getElementById("d1").innerHtml=received_msg;
+
+
+        };
+
+        ws.onclose = function() {
+
+            console.log("closed");
+
+            ws = new WebSocket("wss://api.huobi.pro/hbus/ws");
+         };
+
+    });
+
+        </script>
+
+
+
+
+
+
+</head>
+<body>
+<button onclick="myFunction()">Click me</button>
+<div id="d1"><h1></h1></div>
+<div id ="d2"/>
+</body>
+</html>

@@ -1,0 +1,162 @@
+2019-05-31 12:00:45.390  INFO 13162 --- [restartedMain] huobiwebsocketconnection.Application     : Starting Application on Vishaalee with PID 13162 (/home/vishaalee/IdeaProjects/marketDetails/target/classes started by vishaalee in /home/vishaalee/IdeaProjects/marketDetails)
+2019-05-31 12:00:45.392  INFO 13162 --- [restartedMain] huobiwebsocketconnection.Application     : No active profile set, falling back to default profiles: default
+2019-05-31 12:00:45.506  INFO 13162 --- [restartedMain] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@774cf939: startup date [Fri May 31 12:00:45 IST 2019]; root of context hierarchy
+2019-05-31 12:00:48.100  INFO 13162 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2019-05-31 12:00:48.133  INFO 13162 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-05-31 12:00:48.134  INFO 13162 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.32
+2019-05-31 12:00:48.161  INFO 13162 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+2019-05-31 12:00:48.540  INFO 13162 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2019-05-31 12:00:48.551  INFO 13162 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-05-31 12:00:48.552  INFO 13162 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3046 ms
+2019-05-31 12:00:48.635  INFO 13162 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2019-05-31 12:00:48.640  INFO 13162 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-05-31 12:00:48.641  INFO 13162 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-05-31 12:00:48.641  INFO 13162 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-05-31 12:00:48.641  INFO 13162 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-05-31 12:00:48.920  INFO 13162 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService  'clientInboundChannelExecutor'
+2019-05-31 12:00:48.930  INFO 13162 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService  'clientOutboundChannelExecutor'
+2019-05-31 12:00:49.063  INFO 13162 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService  'messageBrokerTaskScheduler'
+2019-05-31 12:00:49.232  INFO 13162 --- [restartedMain] o.s.w.s.s.s.WebSocketHandlerMapping      : Mapped URL path [/huobi/**] onto handler of type [class org.springframework.web.socket.sockjs.support.SockJsHttpRequestHandler]
+2019-05-31 12:00:49.275  INFO 13162 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService  'brokerChannelExecutor'
+2019-05-31 12:00:49.566  INFO 13162 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-05-31 12:00:49.679  INFO 13162 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@774cf939: startup date [Fri May 31 12:00:45 IST 2019]; root of context hierarchy
+2019-05-31 12:00:49.808  INFO 13162 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-05-31 12:00:49.810  INFO 13162 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-05-31 12:00:49.855  INFO 13162 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-05-31 12:00:49.856  INFO 13162 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-05-31 12:00:49.886  INFO 13162 --- [Thread-5] H.HuobiWebSocketClient                   : Socket opened
+2019-05-31 12:00:49.929  INFO 13162 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2019-05-31 12:00:50.021  INFO 13162 --- [Thread-5] H.HuobiWebSocketClient                   : ping message received
+2019-05-31 12:00:50.032  INFO 13162 --- [Thread-5] H.HuobiWebSocketClient                   : ping message received
+2019-05-31 12:00:50.129  WARN 13162 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2019-05-31 12:00:50.189  INFO 13162 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-05-31 12:00:50.203  INFO 13162 --- [restartedMain] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2019-05-31 12:00:50.204  INFO 13162 --- [restartedMain] o.s.m.s.b.SimpleBrokerMessageHandler     : Starting...
+2019-05-31 12:00:50.205  INFO 13162 --- [restartedMain] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2019-05-31 12:00:50.208  INFO 13162 --- [restartedMain] o.s.m.s.b.SimpleBrokerMessageHandler     : Started.
+2019-05-31 12:00:50.228  INFO 13162 --- [Thread-5] H.HuobiWebSocketClient                   : ping message received
+2019-05-31 12:00:50.310  INFO 13162 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2019-05-31 12:00:50.317  INFO 13162 --- [restartedMain] huobiwebsocketconnection.Application     : Started Application in 6.062 seconds (JVM running for 7.027)
+2019-05-31 12:00:50.413  INFO 13162 --- [Thread-5] H.HuobiWebSocketClient                   : ping message received
+2019-05-31 12:00:50.862  INFO 13162 --- [Thread-5] H.HuobiWebSocketClient                   : ping message received
+2019-05-31 12:00:51.222  INFO 13162 --- [Thread-5] H.HuobiWebSocketClient                   : ping message received
+2019-05-31 12:00:53.268  INFO 13162 --- [Thread-5] H.HuobiWebSocketClient                   : ping message received
+2019-05-31 12:00:53.273  INFO 13162 --- [Thread-5] H.HuobiWebSocketClient                   : ping message received
+2019-05-31 12:00:54.143  INFO 13162 --- [Thread-5] H.HuobiWebSocketClient                   : ping message received
+2019-05-31 12:00:55.210  INFO 13162 --- [Thread-5] H.HuobiWebSocketClient                   : ping message received
+2019-05-31 12:00:55.860  INFO 13162 --- [Thread-5] H.HuobiWebSocketClient                   : ping message received
+2019-05-31 12:00:56.353  INFO 13162 --- [Thread-5] H.HuobiWebSocketClient                   : ping message received
+2019-05-31 12:00:57.130  INFO 13162 --- [Thread-5] H.HuobiWebSocketClient                   : ping message received
+2019-05-31 12:00:58.170  INFO 13162 --- [Thread-5] H.HuobiWebSocketClient                   : ping message received
+2019-05-31 12:00:59.117  INFO 13162 --- [Thread-5] H.HuobiWebSocketClient                   : ping message received
+2019-05-31 12:00:59.607  INFO 13162 --- [Thread-9] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@774cf939: startup date [Fri May 31 12:00:45 IST 2019]; root of context hierarchy
+2019-05-31 12:00:59.610  INFO 13162 --- [Thread-9] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2019-05-31 12:00:59.611  INFO 13162 --- [Thread-9] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopping...
+2019-05-31 12:00:59.611  INFO 13162 --- [Thread-9] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2019-05-31 12:00:59.612  INFO 13162 --- [Thread-9] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopped.
+2019-05-31 12:00:59.613  INFO 13162 --- [Thread-9] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2019-05-31 12:00:59.615  INFO 13162 --- [Thread-9] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'brokerChannelExecutor'
+2019-05-31 12:00:59.615  INFO 13162 --- [Thread-9] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'messageBrokerTaskScheduler'
+2019-05-31 12:00:59.616  INFO 13162 --- [Thread-9] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'clientOutboundChannelExecutor'
+2019-05-31 12:00:59.617  INFO 13162 --- [Thread-9] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'clientInboundChannelExecutor'
+2019-05-31 12:08:29.181  INFO 13393 --- [restartedMain] huobiwebsocketconnection.Application     : Starting Application on Vishaalee with PID 13393 (/home/vishaalee/IdeaProjects/marketDetails/target/classes started by vishaalee in /home/vishaalee/IdeaProjects/marketDetails)
+2019-05-31 12:08:29.184  INFO 13393 --- [restartedMain] huobiwebsocketconnection.Application     : No active profile set, falling back to default profiles: default
+2019-05-31 12:08:29.381  INFO 13393 --- [restartedMain] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4180e7fb: startup date [Fri May 31 12:08:29 IST 2019]; root of context hierarchy
+2019-05-31 12:08:31.807  INFO 13393 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2019-05-31 12:08:31.868  INFO 13393 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-05-31 12:08:31.868  INFO 13393 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.32
+2019-05-31 12:08:31.884  INFO 13393 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+2019-05-31 12:08:32.206  INFO 13393 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2019-05-31 12:08:32.213  INFO 13393 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-05-31 12:08:32.214  INFO 13393 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2834 ms
+2019-05-31 12:08:32.285  INFO 13393 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2019-05-31 12:08:32.289  INFO 13393 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-05-31 12:08:32.290  INFO 13393 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-05-31 12:08:32.290  INFO 13393 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-05-31 12:08:32.291  INFO 13393 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-05-31 12:08:32.556  INFO 13393 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService  'clientInboundChannelExecutor'
+2019-05-31 12:08:32.567  INFO 13393 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService  'clientOutboundChannelExecutor'
+2019-05-31 12:08:32.701  INFO 13393 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService  'messageBrokerTaskScheduler'
+2019-05-31 12:08:32.887  INFO 13393 --- [restartedMain] o.s.w.s.s.s.WebSocketHandlerMapping      : Mapped URL path [/huobi/**] onto handler of type [class org.springframework.web.socket.sockjs.support.SockJsHttpRequestHandler]
+2019-05-31 12:08:32.908  INFO 13393 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService  'brokerChannelExecutor'
+2019-05-31 12:08:33.217  INFO 13393 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-05-31 12:08:33.322  INFO 13393 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4180e7fb: startup date [Fri May 31 12:08:29 IST 2019]; root of context hierarchy
+2019-05-31 12:08:33.433  INFO 13393 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-05-31 12:08:33.435  INFO 13393 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-05-31 12:08:33.501  INFO 13393 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-05-31 12:08:33.502  INFO 13393 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-05-31 12:08:33.514  INFO 13393 --- [Thread-5] H.HuobiWebSocketClient                   : Socket opened
+2019-05-31 12:08:33.586  INFO 13393 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2019-05-31 12:08:33.807  INFO 13393 --- [Thread-5] H.HuobiWebSocketClient                   : ping message received
+2019-05-31 12:08:33.818  INFO 13393 --- [Thread-5] H.HuobiWebSocketClient                   : ping message received
+2019-05-31 12:08:33.831  WARN 13393 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2019-05-31 12:08:33.900  INFO 13393 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-05-31 12:08:33.917  INFO 13393 --- [restartedMain] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2019-05-31 12:08:33.918  INFO 13393 --- [restartedMain] o.s.m.s.b.SimpleBrokerMessageHandler     : Starting...
+2019-05-31 12:08:33.920  INFO 13393 --- [restartedMain] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2019-05-31 12:08:33.923  INFO 13393 --- [restartedMain] o.s.m.s.b.SimpleBrokerMessageHandler     : Started.
+2019-05-31 12:08:33.991  INFO 13393 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2019-05-31 12:08:33.996  INFO 13393 --- [restartedMain] huobiwebsocketconnection.Application     : Started Application in 5.602 seconds (JVM running for 6.369)
+2019-05-31 12:08:34.332  INFO 13393 --- [Thread-5] H.HuobiWebSocketClient                   : ping message received
+2019-05-31 12:08:35.307  INFO 13393 --- [Thread-5] H.HuobiWebSocketClient                   : ping message received
+2019-05-31 12:08:36.276  INFO 13393 --- [Thread-5] H.HuobiWebSocketClient                   : ping message received
+2019-05-31 12:08:37.266  INFO 13393 --- [Thread-5] H.HuobiWebSocketClient                   : ping message received
+2019-05-31 12:08:37.440  INFO 13393 --- [Thread-5] H.HuobiWebSocketClient                   : ping message received
+2019-05-31 12:08:38.270  INFO 13393 --- [Thread-5] H.HuobiWebSocketClient                   : ping message received
+2019-05-31 12:08:38.317  INFO 13393 --- [Thread-9] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4180e7fb: startup date [Fri May 31 12:08:29 IST 2019]; root of context hierarchy
+2019-05-31 12:08:38.320  INFO 13393 --- [Thread-9] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2019-05-31 12:08:38.322  INFO 13393 --- [Thread-9] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopping...
+2019-05-31 12:08:38.323  INFO 13393 --- [Thread-9] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2019-05-31 12:08:38.323  INFO 13393 --- [Thread-9] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopped.
+2019-05-31 12:08:38.325  INFO 13393 --- [Thread-9] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2019-05-31 12:08:38.327  INFO 13393 --- [Thread-9] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'brokerChannelExecutor'
+2019-05-31 12:08:38.327  INFO 13393 --- [Thread-9] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'messageBrokerTaskScheduler'
+2019-05-31 12:08:38.328  INFO 13393 --- [Thread-9] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'clientOutboundChannelExecutor'
+2019-05-31 12:08:38.328  INFO 13393 --- [Thread-9] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'clientInboundChannelExecutor'
+2019-05-31 12:09:25.755  INFO 13492 --- [restartedMain] huobiwebsocketconnection.Application     : Starting Application on Vishaalee with PID 13492 (/home/vishaalee/IdeaProjects/marketDetails/target/classes started by vishaalee in /home/vishaalee/IdeaProjects/marketDetails)
+2019-05-31 12:09:25.769  INFO 13492 --- [restartedMain] huobiwebsocketconnection.Application     : No active profile set, falling back to default profiles: default
+2019-05-31 12:09:25.941  INFO 13492 --- [restartedMain] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@d8e12ca: startup date [Fri May 31 12:09:25 IST 2019]; root of context hierarchy
+2019-05-31 12:09:28.431  INFO 13492 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2019-05-31 12:09:28.461  INFO 13492 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-05-31 12:09:28.461  INFO 13492 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.32
+2019-05-31 12:09:28.472  INFO 13492 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+2019-05-31 12:09:28.811  INFO 13492 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2019-05-31 12:09:28.818  INFO 13492 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-05-31 12:09:28.819  INFO 13492 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2878 ms
+2019-05-31 12:09:28.893  INFO 13492 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2019-05-31 12:09:28.899  INFO 13492 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-05-31 12:09:28.900  INFO 13492 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-05-31 12:09:28.900  INFO 13492 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-05-31 12:09:28.900  INFO 13492 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-05-31 12:09:29.149  INFO 13492 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService  'clientInboundChannelExecutor'
+2019-05-31 12:09:29.161  INFO 13492 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService  'clientOutboundChannelExecutor'
+2019-05-31 12:09:29.326  INFO 13492 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService  'messageBrokerTaskScheduler'
+2019-05-31 12:09:29.534  INFO 13492 --- [restartedMain] o.s.w.s.s.s.WebSocketHandlerMapping      : Mapped URL path [/huobi/**] onto handler of type [class org.springframework.web.socket.sockjs.support.SockJsHttpRequestHandler]
+2019-05-31 12:09:29.557  INFO 13492 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService  'brokerChannelExecutor'
+2019-05-31 12:09:29.786  INFO 13492 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-05-31 12:09:29.878  INFO 13492 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@d8e12ca: startup date [Fri May 31 12:09:25 IST 2019]; root of context hierarchy
+2019-05-31 12:09:29.969  INFO 13492 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-05-31 12:09:29.971  INFO 13492 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-05-31 12:09:29.980  INFO 13492 --- [Thread-5] H.HuobiWebSocketClient                   : Socket opened
+2019-05-31 12:09:30.016  INFO 13492 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-05-31 12:09:30.017  INFO 13492 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-05-31 12:09:30.092  INFO 13492 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2019-05-31 12:09:30.283  WARN 13492 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2019-05-31 12:09:30.353  INFO 13492 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-05-31 12:09:30.368  INFO 13492 --- [restartedMain] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2019-05-31 12:09:30.369  INFO 13492 --- [restartedMain] o.s.m.s.b.SimpleBrokerMessageHandler     : Starting...
+2019-05-31 12:09:30.370  INFO 13492 --- [restartedMain] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2019-05-31 12:09:30.374  INFO 13492 --- [restartedMain] o.s.m.s.b.SimpleBrokerMessageHandler     : Started.
+2019-05-31 12:09:30.448  INFO 13492 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2019-05-31 12:09:30.456  INFO 13492 --- [restartedMain] huobiwebsocketconnection.Application     : Started Application in 5.565 seconds (JVM running for 6.346)
+2019-05-31 12:10:29.550  INFO 13492 --- [MessageBroker-1] o.s.w.s.c.WebSocketMessageBrokerStats    : WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2019-05-31 12:30:26.589  INFO 13492 --- [Thread-9] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@d8e12ca: startup date [Fri May 31 12:09:25 IST 2019]; root of context hierarchy
+2019-05-31 12:30:26.597  INFO 13492 --- [Thread-9] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2019-05-31 12:30:26.599  INFO 13492 --- [Thread-9] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopping...
+2019-05-31 12:30:26.600  INFO 13492 --- [Thread-9] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2019-05-31 12:30:26.600  INFO 13492 --- [Thread-9] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopped.
+2019-05-31 12:30:26.602  INFO 13492 --- [Thread-9] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2019-05-31 12:30:26.604  INFO 13492 --- [Thread-9] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'brokerChannelExecutor'
+2019-05-31 12:30:26.605  INFO 13492 --- [Thread-9] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'messageBrokerTaskScheduler'
+2019-05-31 12:30:26.606  INFO 13492 --- [Thread-9] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'clientOutboundChannelExecutor'
+2019-05-31 12:30:26.606  INFO 13492 --- [Thread-9] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'clientInboundChannelExecutor'
